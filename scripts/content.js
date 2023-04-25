@@ -21,21 +21,8 @@ function addThemesButton() {
     leftSidebarLinks.appendChild(themesButton);
   }
 
-    // Add event listener to the button to toggle the side panel
-    let sidePanelVisible = false;
-    themesButton.addEventListener('click', () => {
-    if (sidePanelVisible) {
-        sidePanel.style.display = 'none';
-        sidePanelVisible = false;
-    } else {
-        sidePanel.style.display = 'block';
-        sidePanelVisible = true;
-    }
-    });
-
     // Append themesButton and sidePanel to the DOM
     leftSidebarLinks.appendChild(themesButton);
-    document.body.appendChild(sidePanel);
 
 }
 
