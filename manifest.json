@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Webflow Editor Themes",
+    "version": "1.0.0",
+    "description": "Add custom themes to the Webflow Editor.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_icon": {
+        "128": "tik.png"
+      }
+    },
+    "icons": {
+      "128": "tik.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.webflow.com/*"],
+        "css": ["styles/themes.css"],
+        "js": ["scripts/content.js"]
+      }
+    ],
+    "background": [
+        {
+            "scripts": ["scripts/background.js"]
+        }
+    ]
+  }
+  
